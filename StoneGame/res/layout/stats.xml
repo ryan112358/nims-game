@@ -1,372 +1,378 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ScrollView1"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/table"
-    android:scrollbarStyle="insideOverlay"
-    android:scrollbars="vertical" >
+    android:gravity="center" >
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/ScrollView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:background="#80000000"
-        android:orientation="vertical" >
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:paddingBottom="20dp"
-            android:paddingTop="5dp"
-            android:text="Personal Stats"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#80000000"
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/skillLevel"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="Skill Level: "
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="18sp" />
-
-        <ProgressBar
-            android:id="@+id/skillbar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="278dp"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:paddingBottom="20dp" />
-
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:paddingBottom="20dp"
-            android:paddingTop="10dp" >
-
-            <TableRow
-                android:id="@+id/TableRow0"
+            <TextView
+                android:id="@+id/textView1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
+                android:text="Personal Stats"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-                <TextView
-                    android:id="@+id/TextView05"
+            <TextView
+                android:id="@+id/skillLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Skill Level: "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/skillbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="278dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="20dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp" >
+
+                <TableRow
+                    android:id="@+id/TableRow0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Difficulty"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Wins"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Losses"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Percentage"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Difficulty"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
+                    android:layout_gravity="center" >
 
-                <TextView
-                    android:id="@+id/TextView04"
+                    <TextView
+                        android:id="@+id/begin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Beginner"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/a1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/a2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/a3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="Wins"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
+                    android:layout_height="wrap_content" >
 
-                <TextView
-                    android:id="@+id/TextView03"
+                    <TextView
+                        android:id="@+id/intermed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intermediate"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="Losses"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
+                    android:layout_height="wrap_content" >
 
-                <TextView
-                    android:id="@+id/TextView02"
+                    <TextView
+                        android:id="@+id/adv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Advanced"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/c1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/c2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/c3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow4"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="Percentage"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-            </TableRow>
+                    android:layout_height="wrap_content" >
 
-            <TableRow
-                android:id="@+id/tableRow1"
+                    <TextView
+                        android:id="@+id/expert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Expert"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/d1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/d2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/d3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/master"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Master"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/e1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/e2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/e3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Total"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/f1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/f2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/f3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/switchtype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center" >
+                android:layout_gravity="center"
+                android:text="Switch Game Type" />
 
-                <TextView
-                    android:id="@+id/begin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Beginner"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Reset Stats" />
+        </LinearLayout>
+    </ScrollView>
 
-                <TextView
-                    android:id="@+id/a1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/a2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/a3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/tableRow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/intermed"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Intermediate"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/b1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/b2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/b3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/tableRow3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/adv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Advanced"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/c1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/c2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/c3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/TableRow4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/expert"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Expert"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/d1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/d2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/d3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/TableRow5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/master"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Master"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/e1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/e2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/e3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/TableRow6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Total"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/f1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/f2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/f3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="-"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="16sp" />
-            </TableRow>
-
-        </TableLayout>
-
-        <Button
-            android:id="@+id/switchtype"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Switch Game Type" />
-
-        <Button
-            android:id="@+id/reset"
-            android:layout_width="111dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Reset Stats" />
-    </LinearLayout>
-
-</ScrollView>
+</RelativeLayout>
