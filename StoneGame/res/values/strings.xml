@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Stone Game</string>
+    <string name="back">Main Menu</string>
+    <string name="p1">Single Player</string>
+    <string name="p2">Two Player</string>
+    <string name="help">How to Play</string>
+    <string name="settings">Settings</string>
+    <string name="go">Go!</string>
+    <string name="variation">Game Type</string>
+    <string name="easy">Easy</string>
+    <string name="med1">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="expert">Expert</string>
+    <string name="instructions">
+        	"		Stone Game is a two player game where you can have up to 3 piles of stones.  Players take turns taking 1, 2, or 3 stones from any single pile until no stones remain.  The player who takes the last stone wins the game.  
+        	
+        	In the multi-heap version of the game, you are allowed to take from multiple piles in the same turn, as long as you take the same number of stones from each pile.  Good Luck!"</string>
+
+</resources>
