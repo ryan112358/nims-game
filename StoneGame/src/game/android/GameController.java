@@ -45,7 +45,7 @@ public class GameController extends Activity {
 	SeekBar numStonesBar;
 	TextView numStonesValue;
 	CheckBox multiHeap;
-	CheckBox texturedStonesBox;
+	//CheckBox texturedStonesBox;
 	TextView aidiff;
 
 	boolean multiHeapStats = false;
@@ -488,7 +488,7 @@ public class GameController extends Activity {
 		numStonesValue = (TextView) findViewById(R.id.numStonesValue);
 		numHeaps = (RadioGroup) findViewById(R.id.numHeaps);
 		multiHeap = (CheckBox) findViewById(R.id.checkBox1);
-		texturedStonesBox = (CheckBox) findViewById(R.id.CheckBox01);
+		//texturedStonesBox = (CheckBox) findViewById(R.id.CheckBox01);
 
 		numStonesBar.setMax(maxPileSize - minPileSize);
 		numStonesBar.setProgress(maxStones - minPileSize);
@@ -496,7 +496,7 @@ public class GameController extends Activity {
 		numStonesValue.setText(""+maxStones);
 
 		multiHeap.setChecked(multiHeapMode);
-		texturedStonesBox.setChecked(texturedStones);
+		//texturedStonesBox.setChecked(texturedStones);
 
 		diffBar.setMax(20);
 		diffBar.setProgress(difficulty);
@@ -512,12 +512,12 @@ public class GameController extends Activity {
 			}
 		});
 
-		texturedStonesBox.setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View arg0) {
-				texturedStones = ! texturedStones;
-			}
-		});
+//		texturedStonesBox.setOnClickListener(new OnClickListener(){
+//			@Override
+//			public void onClick(View arg0) {
+//				texturedStones = ! texturedStones;
+//			}
+//		});
 
 		numStonesBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 
